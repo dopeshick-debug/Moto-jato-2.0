@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoJatoo24h</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #eee;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: rgba(20,20,20,0.9);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      color: #aab4ff;
+      font-size: 1.3rem;
+    }
+    nav a {
+      color: #eee;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 2.0s;
+    }
+    nav a:hover { color: #b0b8ff; }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: radial-gradient(circle at top left, rgba(160,180,255,0.2), transparent 60%),
+                  radial-gradient(circle at bottom right, rgba(120,140,255,0.2), transparent 60%);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(150,170,255,0.6);
+    }
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      color: #ccc;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2.0px;
+      padding: 14px 28px;
+      background: #1c1c1c;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(120,140,255,0.4);
+    }
+    .btn:hover {
+      background: rgba(150,170,255,0.15);
+      box-shadow: 0 0 30px rgba(150,170,255,0.8);
+    }
+
+    .section {
+      padding: 10px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .cards {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 0 25px rgba(150,170,255,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MotoJatoo24h</h1>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#como">Como funciona</a>
+    <a href="#parceiros">Parceiros</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Entregas24 hrs</h2>
+  <p>Adega, conveniência, farmácia e mercado em um só lugar.<br>
+     Atendimento rápido, seguro e prático 24 horas por dia.</p>
+  <a class="btn" href="https://wa.me/+5547984963491?text=Quero%20um%20delivery%20agora">📱 Pedir no WhatsApp</a>
+</section>
+
+<section id="servicos" class="section">
+  <h3>Serviços</h3>
+  <div class="cards">
+    <div class="card"><h4>Adegas e Bebidas</h4><p>Cervejas, energéticos, gelo e muito mais.</p></div>
+    <div class="card"><h4>Conveniência</h4><p>Snacks, cigarros, água e itens rápidos.</p></div>
+    <div class="card"><h4>Farmácia</h4><p>Medicamentos sem receita, higiene e cuidados pessoais.</p></div>
+    <div class="card"><h4>Mercado</h4><p>Itens básicos para não faltar nada em casa.</p></div>
+  </div>
+</section>
+
+<section id="como" class="section">
+  <h3>Como Funciona</h3>
+  <div class="cards">
+    <div class="card"><h4>1. Você pede</h4><p>Entre em contato no WhatsApp e diga o que precisa.</p></div>
+    <div class="card"><h4>2. Nós conectamos</h4><p>Acionamos parceiros e entregadores próximos.</p></div>
+    <div class="card"><h4>3. Entrega</h4><p>Receba em segurança, rápido e com suporte 24h.</p></div>
+  </div>
+</section>
+ 
+   <section id="parceiros" class="section">
+  <h3>Seja Parceiro</h3>
+  <p style="text-align:center; max-width:600px; margin:auto;">
+    Tem adega, farmácia, conveniência ou mercado?<br>
+    Junte-se à rede MOTO-JATOO24h e receba mais pedidos!
+  </p>
+  <div style="text-align:center;">
+    <a class="btn" href="https://wa.me/+5547984963491?text=Quero%20ser%20parceiro">✨ Quero ser parceiro</a>
+  </div>
+</section>
+<footer>
+  © 2025 - MotoJatoo.24h - Sua Cidade. Todos os direitos reservados.
+</footer>
+</body>
+</html>
